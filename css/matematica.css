@@ -37,16 +37,21 @@ body, p, h1, ul, li, blockquote {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  background-color: rgba(37, 36, 36, 0.575); 
+  margin-left: 10px;
+  border-radius: 10px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
+/* .topnav a:hover {
+  background-color: rgb(0, 0, 0);
   color: black;
-}
+ 
+} */
 
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+
 }
 
 .topnav .icon {
@@ -72,6 +77,7 @@ body, p, h1, ul, li, blockquote {
     float: none;
     display: block;
     text-align: left;
+    border-radius: 0px;
   }
 }
 li {
@@ -142,8 +148,9 @@ img {
 /* HEADER */
 
 .header {
+  
   grid-area: header;
-  background: linear-gradient(50deg, #2a52d6, rgb(6, 3, 163));
+  background: linear-gradient(rgba(3, 52, 92, 0.911),#065ca1);
   padding: 30px;
   align-items: center;
   display: grid;
@@ -391,14 +398,6 @@ p {
   align-items: flex-start;
 }
 
-.caracteristicas > div {
-  width: 80px;
-  text-align: center;
-  box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
-  background: linear-gradient(135deg, #8844ee, #B07DFB);
-  border-radius: 5px;
-  position: relative;
-}
 
 .caracteristicas > div:first-child {
   margin-right: 30px;
@@ -476,6 +475,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.125em;
   padding: 15px;
+  
 }
 
 .atributos li + li {
@@ -510,4 +510,27 @@ p {
 [data-anime].animate {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
+}
+
+#subirTopo {
+text-decoration: none;
+background: rgba(10, 170, 219, 0.9);
+bottom: 30px;
+right: 30px;
+color: #fff;
+text-align: center;
+cursor: pointer;
+padding: 15px;
+font-size: 15px;
+font-weight: bold;
+text-transform: uppercase;
+position: fixed;
+border: 0;
+font-family: sans-serif;
+opacity: .8;
+border-radius: 10px;
+}
+
+#subirTopo:hover {
+opacity:1;
 }

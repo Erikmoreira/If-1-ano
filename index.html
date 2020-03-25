@@ -78,13 +78,13 @@ body {
 }
 </style>
 </head>
-<body>
+<body onscroll="subirImg()">
 
 
 
     <article class="estrutura">
     
-    <header class="header">
+    <header id="menu" class="header">
       <div class="topnav" id="myTopnav">
         <a href="#home"class="active" >Home</a>
         <a href="#" >Matemática</a>
@@ -98,44 +98,46 @@ body {
         </a>
       </div>
       
-      
-      
+   
     </header>
-    
+       <a id="subirTopo">
+        ^ <br> subir
+      </a>
+      
     <nav class="sidenav">
       <ul>
         <li class="sidenav-item">
           <a href="#Poli">
-            <img src="img/matematica/poliedro.png" alt="Cervo" />
+            <img src="img/matematica/poliedro.png" class="scroll" alt="Cervo" />
           </a>
         </li>
         <li class="sidenav-item">
           <a href="#pris">
-            <img src="img/matematica/prisma.png" alt="Leão" />
+            <img src="img/matematica/prisma.png" class="scroll" alt="Leão" />
           </a>
         </li>
         <li class="sidenav-item">
           <a href="#pira">
-            <img src="img/matematica/piramide.png" alt="Gato" />
+            <img src="img/matematica/piramide.png" class="scroll" alt="Gato" />
           </a>
         </li>
         <li class="sidenav-item">
-          <a href="#">
-            <img src="img/matematica/cilindro.png" alt="União Soviética" />
+          <a href="#cili">
+            <img src="img/matematica/cilindro.png" class="scroll" alt="União Soviética" />
           </a>
         </li>
         <li class="sidenav-item">
-          <a href="#">
-            <img src="img/matematica/cone.png" alt="Alemanha" />
+          <a href="#cone">
+            <img src="img/matematica/cone.png" class="scroll" class="scroll" alt="Alemanha" />
           </a>
         </li>
         <li class="sidenav-item">
-          <a href="#">
+          <a href="#esfe">
             <img src="img/matematica/esfera.png" alt="Abelha" />
           </a>
         </li>
         <li class="sidenav-item">
-          <a href="#">
+          <a href="#formu">
             <img src="img/matematica/information-2866132_960_720.png" alt="Abelha" />
           </a>
         </li>
@@ -216,7 +218,7 @@ Tipos de Pirâmide
       
       <img class="imagem-3 col-wide" src="img/matematica/seccao-transversal-na-piramide.jpg" alt="Wolf" data-anime="left" />
 
-      <blockquote class="citacao col-wide"  data-anime="left" style="">
+      <blockquote class="citacao col-wide"  data-anime="left" >
         <p><ul class="atributos" data-anime="left"> <b style="font-size: 40px;">Elementos do tronco da pirâmide</b><br><br>
         <br>
           <li>Base maior: é a base da pirâmide, o polígono que se opõe ao vértice dela;</li>
@@ -238,7 +240,7 @@ O melhor caminho para calcular o volume do tronco de uma pirâmide é subtrair d
       
       <div class="informacoes" data-anime="top">
 
-        <p><b style="font-size: 40px;">Cilindro</b><br><br>
+        <p><b style="font-size: 40px;" id="cili">Cilindro</b><br><br>
           
           O cilindro ou cilindro circular é um sólido geométrico alongado e arredondado que possui o mesmo diâmetro ao longo de todo o comprimento.<br>
           Essa figura geométrica, que faz parte dos estudos de geometria espacial, apresenta dois círculos com raios de medidas equivalentes os quais estão situados em planos paralelos.
@@ -258,7 +260,7 @@ Dependendo da inclinação do eixo, ou seja, do ângulo formado pela geratriz, o
 <img class="imagem-2" src="img/matematica/56953501736a5-cilindro.jpg" >
         </p></div>
        
-        <p class="introducao col-wide"><b>Cone</b><br><br>
+        <p class="introducao col-wide"  id="cone"><b>Cone</b><br><br>
           É o sólido obtido pela rotação completa de um triângulo retângulo em torno de um eixo que contém um de seus catetos. Este cone é também chamado cone circular reto. Há cones circulares que não são de revolução. São chamados cones oblíquos, pois seus eixos não são perpendiculares aos planos de base.
           
           Isso não acontece no último poliedro, pois, em relação a duas de suas faces, ele não está contido apenas em um semi-espaço. Portanto, ele é denominado côncavo.</p>
@@ -270,7 +272,7 @@ Dependendo da inclinação do eixo, ou seja, do ângulo formado pela geratriz, o
 Não devemos confundir a medida da altura do tronco de cone com a medida da altura de sua lateral (geratriz), pois são elementos distintos. A altura do cone forma com as bases um ângulo de 90º. No caso da geratriz os ângulos formados são um agudo e um obtuso.</p>
 <img class="imagem-2" src="img/matematica/download.png" alt="Wolf 2" /><img class="imagem-2" src="img/matematica/cone4-450x327.jpg" alt="Wolf 2" />
         
-<p class="linhar" id="pris" > <b>Esfera </b><br><br>
+<p class="linhar" id="esfe" > <b>Esfera </b><br><br>
   A Esfera é uma figura simétrica tridimensional que faz parte dos estudos de geometria espacial.
 
   A esfera é um sólido geométrico obtido através da rotação do semicírculo em torno de um eixo. É composto por uma superfície fechada na medida que todos os pontos estão equidistantes do centro (O).
@@ -287,7 +289,7 @@ Não devemos confundir a medida da altura do tronco de cone com a medida da altu
   <p>É possível calcular o volume da cunha esférica por meio de uma regra de três básica ou a partir de uma fórmula proveniente dessa regra. Para tanto, basta lembrar que o volume da esfera é resultado da revolução de um semicírculo em torno de seu próprio diâmetro em 360° e que a cunha esférica é resultado da mesma revolução apenas em α graus.</p>
   <blockquote class="citacao2 col-wide" data-anime="left">
    
-    <p><ul class="atributos" data-anime="left"> <b style="font-size: 40px;font-family: ;">Formulas</b><br><br>
+    <p id="formu"><ul class="atributos" data-anime="left"> <b style="font-size: 40px;">Formulas</b><br><br>
       <br>
       <li><b>Áreas do Prisma<br><br>
         Àrea lateral<br><br>
@@ -332,6 +334,7 @@ volume <br>
     
     <footer class="footer">
       <p> By:Erik Felipe</p>
+      <button id="click">Click me</button>
     </footer>
     
     </article>
@@ -344,8 +347,48 @@ volume <br>
           x.className = "topnav";
         }
       }
+      
+      </script>
+    <script>
+      var $doc = $('html, body');
+      $('.sidenav-item').click(function() {
+          $doc.animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 500);
+          return false;
+      });
+    </script>
+     
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script type="text/javascript">
+      jQuery(document).ready(function(){
+      
+      jQuery("#subirTopo").hide();
+      
+      jQuery('a#subirTopo').click(function () {
+               jQuery('body,html').animate({
+                 scrollTop: 0
+               }, 800);
+              return false;
+         });
+      
+      jQuery(window).scroll(function () {
+               if (jQuery(this).scrollTop() > 1000) {
+                  jQuery('#subirTopo').fadeIn();
+               } else {
+                  jQuery('#subirTopo').fadeOut();
+               }
+           });
+      });
+      </script>
+     
+
+     
+</script>
       </script>
     <script src="js/script.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/oi.js"></script>
   </body>
 </html>
  
